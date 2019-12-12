@@ -1,0 +1,112 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries","I can provide support related to following problems technical query,management related query,order related query,tracking related query,procurement query,outsourcing problem,manufacturing delay,"],
+         "context": [""]
+        },
+        {"tag": "order_tracking",
+             "patterns": ["How to check where is my order with id 431B67?", "Open prediction analysis tool for order tracking", "Give me a list of orders put on hold", "List all drugs suitable for patient with adverse reaction", "Where is my order with id 561A24?" ],
+         "responses": ["Navigating to order module to check"],
+         "context": [""]
+        },
+        {"tag": "order_status",
+         "patterns": ["what is the status of order 671C34?"],
+         "responses": ["your order is on hold","your order has been dispatched"],
+         "context": ["search_order_by_status"]
+        },
+       
+        {"tag": "search_person_by_id",
+         "patterns": ["I want an appoitment with Manoj kumar","set an appointment with Sujata Nandi"],
+         "responses": ["fixing an appointment."],
+         "context": [""]
+        },
+        {"tag": "appointment status",
+         "patterns": ["Is my appointment fixed?","Do I have an appointment today?"],
+         "responses": ["please wait!Searching in the module"],
+         "context": [""]
+        },
+    
+        {"tag": "manufacturing_problems",
+         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
+         "responses": ["Please provide pharmacy name"],
+         "context": ["search_pharmacy_by_name"]
+        },
+        {"tag": "search_department_by_name",
+         "patterns": ["I want to know the various departments in this company"],
+         "responses": ["Loading department details"],
+         "context": [""]
+        },
+        {"tag": "competitors_in_market",
+         "patterns": ["which company might bring us in a challenging position", "threat in the market"],
+         "responses": ["Based on the prediction model Hp"],
+         "context": ["search_prediction_model"]
+        },
+       
+        {"tag": "connect_people",
+         "patterns": ["I want to meet the head of HR/IT/Projects department","I want to meet head IT Rakesh sharma."],
+         "responses": ["I will just check if he is available or on leave."],
+         "context": ["search_attendance_database_name_post"]
+        },
+        {"tag": "project_handling_queries",
+         "patterns": ["complaint has been raised for Insufficient Team Skills","Miscommunication Conflicts needs to be resolved","Risk Management issue has occured","skilled employees needed urgently"],
+         "responses": ["Please contact the project depatment"],
+         "context": ["search_for_person_incharge_department"]
+        },
+        {"tag": "solve_use_problems",
+         "patterns": ["Lack of product clarity","the specifications of product is not clear to customer. what should we do"],
+         "responses": ["Please enter product id and customer id.specifications shall be sent to user"],
+         "context": ["search_hospital_by_type"]
+        },
+         {"tag": "version_update",
+         "patterns": ["user needs the updated software version"],
+         "responses": ["version updation request raised"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "HR_related_problem",
+         "patterns": ["problem related to Job design and analysis","query based on Workforce planning","Training and development issues are to be handled","Compensation and benefits of the working employee","Legal issues of department like accidents in the company"],
+         "responses": ["Please Contact the HR team for this problem."],
+         "context": ["search_hr_member_responsible"]
+        },
+    {"tag": "factors_impacting_sale",
+         "patterns": ["Please let me know how the sale is impacted this year?","factors impacting sale this year?","how does the sale change this year?"],
+         "responses": ["elections will impact our sale this year","this year our sale might increase during durga puja","this year sale might be impacted due to demonitisation"],
+         "context": ["search_impacts"]
+        },
+    
+    {"tag": "predict_performance",
+         "patterns": ["Are we doing better this year?","how have we improved our sale from last year?","what is the profit or loss we incurred this year?"],
+         "responses": ["yes we have done better this year","we have improved our sale by increasing our customers upto 2 lakh","profit earned is 15%"],
+         "context": ["search_performance_table"]
+        },
+         {"tag": "customer_satisfaction",
+         "patterns": ["how was the customer response","Is the customer happy?","what was the customer feedback?"],
+         "responses": ["Majority of the Customers were happy as the order was delivered on due date."],
+         "context": [""]
+        },
+        {"tag": "predict_delay",
+         "patterns": [],
+         "responses": ["Loading prediction details for delay"],
+         "context": [""]
+        }
+   ]
+}
